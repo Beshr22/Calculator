@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+header{
+    background-color: black;   
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-size: 2.5rem;
+}
+
+.dark-mode{
+    background-color: rgb(24, 23, 23);
+}
+
+.btn-dark{
+  outline: none;
+  width: 40px;
+  height: 40px;  
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+  border-radius: 50px;
+  border: 2px solid white;
+  transition: 0.4s;
+  background: url("./images.png")
+    no-repeat center black;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+.btn-light {
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+	margin-right: 10px;
+    height: 40px;  
+	float: right;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    transition: 0.4s;
+    background: url("./Riot_Games-Logo.wine.png")
+    no-repeat center black;
+    background-size: 20px;
+}
+
+#container{	
+	height: 450px;
+	margin: 0 auto;    	
+}
+
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: black;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result{
+	height: 100px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 50px;
+    color: black;
+}
+
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: black;
+}
+
+#keyboard{
+	height: 400px;
+}
+.operator, .number{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.number{
+	background-color:white;
+}
+
+.number, .operator{
+	cursor: pointer;
+}
+
+.operator:active, .number:active{
+	font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16){
+	font-size: 20px;
+	background-color: orange;
+}
+
+button:nth-child(20){
+	font-size: 20px;
+	background-color: red;
+}
